@@ -1,6 +1,3 @@
-// Cargar env (Es necesario tambien en este archivo, por que al ejecutar registerCommands, no estan cargadas, no se por que)
-process.loadEnvFile();
-
 import {
   CacheType,
   ChatInputCommandInteraction,
