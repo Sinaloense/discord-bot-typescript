@@ -44,10 +44,6 @@ export class BotServer {
       if (msg.author.bot) {
         return;
       }
-
-      console.log(msg);
-      console.log(msg.content);
-      console.log(msg.channel);
     });
 
     this.client.on("interactionCreate", async (interaction) => {
