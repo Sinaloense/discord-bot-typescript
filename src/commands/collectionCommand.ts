@@ -1,9 +1,7 @@
 import { Collection } from "discord.js";
 
+import { commandPing, commandServer, commandUser } from "./index.js";
 import { CommandInterface } from "../interfaces/index.js";
-import { commandPing } from "./pingCommand.js";
-import { commandServer } from "./serverCommand.js";
-import { commandUser } from "./userCommand.js";
 
 export const commandsCollection: Collection<string, CommandInterface> =
   new Collection();
