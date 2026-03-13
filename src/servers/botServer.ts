@@ -1,4 +1,4 @@
-import { Client, IntentsBitField, Message } from "discord.js";
+import { Client, IntentsBitField, Message, MessageFlags } from "discord.js";
 
 import {
   commandsCollection,
@@ -66,7 +66,7 @@ export class BotServer {
         console.error(error);
         await interaction.reply({
           content: "Ocurrió un error mientras se ejecutaba este comando!",
-          ephemeral: true,
+          flags: MessageFlags.Ephemeral,
         });
       }
     });
